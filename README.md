@@ -123,7 +123,7 @@ Excluded via [`.gitignore`](.gitignore) (not required for the live site):
 
 © 2026 **Thiink Media Graphics, LLC.** All rights reserved.
 
-Created by **Mustapha C. A. Jr** · [hello@thiinkmediagraphics.com](mailto:hello@thiinkmediagraphics.com)
+Created by **Mustapha C. A. Jr** · [hello@thiinkmediagraphics.com](mailto:Teamo@thiinkmediagraphics.com)
 
 Visual references in the pitch are placeholders for licensed or original art. Fill the credit table in section 15 before external distribution. See the site footer for confidentiality notice.
 
@@ -131,4 +131,4 @@ Visual references in the pitch are placeholders for licensed or original art. Fi
 
 ## Contact
 
-**Thiink Media Graphics** · [thiinkmediagraphics.com](https://thiinkmediagraphics.com) · [hello@thiinkmediagraphics.com](mailto:hello@thiinkmediagraphics.com)
+**Thiink Media Graphics** · [thiinkmediagraphics.com](https://thiinkmediagraphics.com) · [Team@thiinkmediagraphics.com](mailto:Teamo@thiinkmediagraphics.com)
