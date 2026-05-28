@@ -1488,6 +1488,8 @@ footer::after {
 }
 
 /* ============================== responsive ============================== */
+
+/* ---------- ≤ 1100px — Large tablets, small laptops ---------- */
 @media (max-width: 1100px) {
   .clans-grid, .chars-grid, .fran-grid { grid-template-columns: repeat(2, 1fr); }
   .cls-cats { grid-template-columns: repeat(2, 1fr); }
@@ -1497,24 +1499,409 @@ footer::after {
     grid-template-columns: 1fr;
     gap: 50px;
   }
+  .hero-top { grid-template-columns: 1fr; gap: 20px; }
+  .hero-tag { text-align: left; justify-self: start; }
   .hero-bottom { grid-template-columns: 1fr; }
   .hero-bottom .right { justify-self: start; text-align: left; }
-  .tier { transform: scaleX(1); } /* don't animate widths on mobile */
+  .tier { transform: scaleX(1); } /* don't animate widths on smaller screens */
   .pyramid { width: 100%; }
   .tier.t1, .tier.t2, .tier.t3, .tier.t4, .tier.t5 { width: 100%; max-width: 720px; }
+  .tourn-grid { gap: 40px; }
+  .halo-wrap { max-width: 400px; }
 }
-@media (max-width: 700px) {
-  .tone-grid { grid-template-columns: 1fr; }
-  .clans-grid, .chars-grid, .fran-grid { grid-template-columns: 1fr; }
-  .cls-cats { grid-template-columns: 1fr; }
-  .world-stats, .why-stats { grid-template-columns: 1fr 1fr; }
-  .src-row { grid-template-columns: 1fr; gap: 4px; }
+
+/* ---------- ≤ 900px — Tablets (portrait) ---------- */
+@media (max-width: 900px) {
+  section { padding: clamp(60px, 8vh, 120px) 0; }
+
+  .hero-chrome { flex-direction: column; align-items: flex-start; gap: 8px; font-size: 11px; padding: 24px var(--gutter); }
+  .hero-body { padding: 20px var(--gutter) 60px; gap: 32px; }
+  .hero-wordmark { font-size: clamp(72px, 14vw, 220px); }
+  .hero-bottom .logline { font-size: clamp(15px, 1.2vw, 20px); }
+
   .logline-bottom { grid-template-columns: 1fr; gap: 30px; }
   .logline-bottom .right { text-align: left; }
   .logline-bottom .right .body { margin-left: 0; }
+
+  .tourn-step { grid-template-columns: 60px 1fr; gap: 16px; }
+  .halo-wrap { max-width: 340px; }
+
+  .bead-row { grid-template-columns: 44px 1fr; gap: 16px; }
+  .bead-row .tag { display: none; }
+
+  .tension-card { padding: 32px; }
+
+  .pilot-grid { gap: 50px; }
+  .act { grid-template-columns: 100px 1fr; gap: 16px; }
+  .act p { font-size: 16px; }
+
+  .arc-grid { gap: 18px; }
+  .season { padding: 28px 24px 24px; }
+
+  .why-grid { gap: 50px; }
+
+  .src-grid { grid-template-columns: 1fr; gap: 40px; }
+
+  .footer-credit { font-size: 11px; letter-spacing: 0.2em; }
+  .footer-credit .sep { margin: 0 8px; }
+}
+
+/* ---------- ≤ 768px — Standard mobile / small tablets ---------- */
+@media (max-width: 768px) {
+  :root { --gutter: clamp(16px, 4vw, 40px); }
+
+  section { padding: clamp(50px, 7vh, 100px) 0; }
+
+  .sec-mark { top: 20px; font-size: 10px; letter-spacing: 0.24em; }
+  .sec-mark::before { width: 16px; }
+
+  /* Hero adjustments */
+  .hero-chrome { font-size: 10px; letter-spacing: 0.22em; padding: 20px var(--gutter); }
+  .hero-body { padding: 16px var(--gutter) 50px; gap: 24px; }
+  .hero-quote { font-size: clamp(16px, 1.3vw, 22px); }
+  .hero-tag .comps { font-size: clamp(18px, 1.5vw, 26px); }
+  .hero-wordmark { font-size: clamp(60px, 13vw, 180px); }
+  .scroll-cue { bottom: 18px; font-size: 10px; }
+  .scroll-cue .line { height: 24px; }
+
+  /* Typography scale-down */
+  .kicker { font-size: 11px; letter-spacing: 0.24em; margin-bottom: 14px; }
+  .kicker::before { width: 20px; }
+  .lead { font-size: clamp(18px, 1.4vw, 24px); }
+  .body { font-size: clamp(16px, 1.1vw, 19px); }
+
+  /* Grid collapses */
+  .tone-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .clans-grid, .chars-grid, .fran-grid { grid-template-columns: 1fr; gap: 16px; }
+  .cls-cats { grid-template-columns: 1fr; }
+  .world-stats { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .why-stats { grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  /* Clan card tweaks */
+  .clan-card { padding: 22px 20px 18px; }
+  .clan-card h4 { font-size: clamp(24px, 2vw, 32px); }
+
+  /* Character cards */
+  .chars-grid { gap: 20px; }
+  .char-meta { padding: 18px 20px 22px; }
+  .char-meta .h-3 { font-size: clamp(22px, 1.8vw, 30px); }
+  .char-meta .role { font-size: 10px; margin: 4px 0 10px; }
+  .char-meta p { font-size: 15px; }
+
+  /* Pilot */
+  .pilot-left .ep-no { font-size: clamp(120px, 14vw, 200px); }
   .act { grid-template-columns: 1fr; gap: 8px; }
-  .hero-quote, .hero-tag { position: static; max-width: 100%; text-align: left; margin-bottom: 20px; }
-  .hero-tag { text-align: left; }
-  footer { padding: 80px var(--gutter) 40px; }
-  .footer-sub { flex-direction: column; gap: 12px; }
+  .act .lbl { font-size: 10px; padding-top: 0; }
+  .act p { font-size: 15px; }
+
+  /* Season arc */
+  .season { padding: 24px 20px 20px; }
+  .season .s-no { font-size: clamp(48px, 5vw, 72px); }
+  .season h4 { font-size: clamp(24px, 2vw, 34px); }
+  .season .quote { font-size: 16px; }
+  .season ul { font-size: 15px; }
+
+  /* Tournament */
+  .tourn-step .n { font-size: clamp(36px, 3.5vw, 56px); }
+  .tourn-step h4 { font-size: clamp(20px, 1.6vw, 28px); }
+  .tourn-step p { font-size: 17px; }
+
+  /* Franchise tiles */
+  .fran-grid { gap: 14px; }
+  .fran-tile { padding: 22px 20px; min-height: 200px; }
+
+  /* Beads */
+  .beads-grid { grid-template-columns: 1fr; gap: 40px; }
+  .bead-row .name { font-size: clamp(18px, 1.3vw, 22px); }
+  .bead-row .desc { font-size: 15px; }
+
+  /* Hierarchy */
+  .hier-grid { gap: 40px; }
+  .tier { height: 54px; font-size: clamp(16px, 1.4vw, 22px); }
+  .tier.t1 { height: 66px; }
+
+  /* Why now */
+  .why-stat .num { font-size: clamp(40px, 5vw, 72px); }
+  .why-bullet { grid-template-columns: 48px 1fr; gap: 14px; }
+  .why-bullet .n { font-size: clamp(24px, 2vw, 32px); }
+  .why-bullet h5 { font-size: clamp(18px, 1.5vw, 24px); }
+  .why-bullet p { font-size: 15px; }
+
+  /* Source */
+  .src-row { grid-template-columns: 1fr; gap: 4px; font-size: 12px; }
+  .src-disclaimer { font-size: 12px; padding: 18px; }
+
+  /* Footer */
+  footer { padding: 70px var(--gutter) 36px; }
+  .footer-diamonds { gap: 22px; margin-bottom: 28px; }
+  .footer-credit { font-size: 10px; letter-spacing: 0.16em; }
+  .footer-contact { font-size: 11px; padding: 12px 24px; letter-spacing: 0.24em; }
+  .footer-sub { flex-direction: column; gap: 10px; text-align: center; font-size: 10px; }
+  .footer-meta { font-size: 10px; letter-spacing: 0.24em; }
+}
+
+/* ---------- ≤ 600px — Larger phones (landscape / phablets) ---------- */
+@media (max-width: 600px) {
+  .tone-grid { grid-template-columns: 1fr; gap: 10px; }
+  .tone-tile { aspect-ratio: 16 / 9; }
+
+  .hero-wordmark { font-size: clamp(52px, 12vw, 140px); white-space: normal; text-align: center; }
+  .hero-mark-row { padding: 0 8px; }
+
+  .logline-quote { font-size: clamp(32px, 5vw, 72px); }
+
+  .world-img { aspect-ratio: 16 / 10; }
+
+  /* Stacked stat items on very small widths */
+  .world-stats { gap: 12px; }
+  .stat .num { font-size: clamp(28px, 3vw, 44px); }
+
+  .tourn-step { grid-template-columns: 44px 1fr; }
+  .tourn-step .n { font-size: clamp(28px, 3vw, 44px); }
+
+  .halo-wrap { max-width: 280px; }
+  .halo-center .num { font-size: clamp(44px, 5.5vw, 72px); }
+  .halo-center .lbl { font-size: 12px; }
+  .halo-center .sub { font-size: 10px; }
+
+  .tension-card { padding: 26px 22px; }
+  .tension-card .choice { font-size: clamp(22px, 2.2vw, 34px); }
+
+  .pilot-left .ep-no { font-size: clamp(96px, 12vw, 160px); }
+  .pilot-left .runtime { font-size: 11px; gap: 10px; }
+  .pilot-left .desc { font-size: 17px; }
+
+  .fran-tile { min-height: auto; }
+  .fran-tile h5 { font-size: clamp(20px, 1.6vw, 26px); }
+  .fran-tile p { font-size: 14px; }
+
+  .footer-logo { max-width: min(280px, 80vw); }
+  .footer-project { font-size: clamp(32px, 3.5vw, 52px); }
+  .footer-actions { flex-direction: column; align-items: center; }
+  .footer-contact { width: 100%; max-width: 280px; text-align: center; }
+}
+
+/* ---------- ≤ 480px — Standard phones (portrait) ---------- */
+@media (max-width: 480px) {
+  :root { --gutter: 16px; }
+
+  section { padding: clamp(40px, 6vh, 80px) 0; }
+
+  .sec-mark { top: 14px; font-size: 9px; gap: 8px; }
+  .sec-mark::before { width: 12px; }
+  .sec-mark .seal { width: 7px; height: 7px; }
+
+  .hero { min-height: 100svh; }
+  .hero-chrome { padding: 16px var(--gutter); font-size: 9px; letter-spacing: 0.18em; }
+  .hero-body { padding: 12px var(--gutter) 40px; gap: 18px; }
+  .hero-quote { font-size: clamp(14px, 1.2vw, 18px); }
+  .hero-tag .lbl { font-size: 10px; letter-spacing: 0.22em; }
+  .hero-tag .comps { font-size: clamp(16px, 1.3vw, 22px); }
+  .hero-wordmark { font-size: clamp(44px, 11vw, 110px); }
+  .hero-bottom .label { font-size: 10px; letter-spacing: 0.22em; }
+  .hero-bottom .logline { font-size: clamp(14px, 1.1vw, 17px); }
+
+  .scroll-cue { bottom: 12px; font-size: 9px; letter-spacing: 0.3em; gap: 8px; }
+  .scroll-cue .line { height: 20px; }
+
+  /* Typography */
+  .kicker { font-size: 10px; letter-spacing: 0.2em; margin-bottom: 10px; gap: 8px; }
+  .kicker::before { width: 16px; }
+  .h-display { font-size: clamp(40px, 8vw, 96px); }
+  .h-1 { font-size: clamp(36px, 5.5vw, 72px); }
+  .h-2 { font-size: clamp(28px, 4vw, 52px); }
+  .h-3 { font-size: clamp(22px, 2.6vw, 34px); }
+  .h-4 { font-size: clamp(18px, 1.6vw, 24px); }
+  .lead { font-size: clamp(17px, 1.3vw, 22px); }
+  .body { font-size: clamp(15px, 1vw, 18px); }
+
+  .logline-quote { font-size: clamp(28px, 4.5vw, 56px); }
+  .logline-bottom { margin-top: 40px; padding-top: 20px; gap: 24px; }
+
+  /* Stat numbers */
+  .stat .num { font-size: clamp(24px, 2.8vw, 40px); }
+  .world-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .why-stats { grid-template-columns: 1fr; gap: 16px; }
+  .why-stat .num { font-size: clamp(36px, 4.5vw, 60px); }
+
+  /* Hierarchy */
+  .hier-note { padding-left: 16px; }
+  .tier { height: 48px; font-size: clamp(14px, 1.2vw, 18px); }
+  .tier.t1 { height: 58px; }
+
+  /* Tournament */
+  .tourn-step { grid-template-columns: 36px 1fr; gap: 12px; padding: 16px 0; }
+  .tourn-step .n { font-size: clamp(24px, 2.8vw, 40px); }
+  .tourn-step h4 { font-size: clamp(18px, 1.4vw, 24px); margin-bottom: 4px; }
+  .tourn-step p { font-size: 15px; }
+
+  .halo-wrap { max-width: 240px; }
+
+  .stakes-quote .stake-text { font-size: clamp(22px, 2.4vw, 32px); }
+
+  /* Bead rows */
+  .bead-row { grid-template-columns: 36px 1fr; gap: 12px; padding: 12px 0; }
+  .bead-lg { width: 26px; height: 26px; }
+  .bead-row .name { font-size: clamp(16px, 1.2vw, 20px); }
+  .bead-row .desc { font-size: 14px; }
+
+  .tension-card { padding: 22px 18px; }
+  .tension-card .choice { font-size: clamp(20px, 2vw, 30px); margin: 14px 0 18px; }
+
+  /* Clans */
+  .clan-card { padding: 18px 16px 14px; }
+  .clan-card h4 { font-size: clamp(22px, 1.8vw, 28px); }
+  .clan-card p { font-size: 15px; }
+  .clan-card .subs { font-size: 9px; }
+
+  /* Classes */
+  .cls-card { padding: 12px; }
+  .cls-card h5 { font-size: clamp(16px, 1.2vw, 20px); }
+  .cls-card p { font-size: 13px; }
+  .cls-card .dom { font-size: 8px; }
+  .cls-cat .cat-head { font-size: clamp(18px, 1.5vw, 22px); }
+
+  /* Characters */
+  .char-meta { padding: 16px 16px 18px; }
+  .char-meta .char-no { font-size: 10px; }
+  .char-meta .h-3 { font-size: clamp(20px, 1.6vw, 28px); }
+  .char-meta .role { font-size: 9px; margin: 4px 0 8px; }
+  .char-meta p { font-size: 14px; }
+  .char-card .view-more { font-size: 10px; letter-spacing: 0.24em; margin-top: 10px; }
+
+  /* Pilot */
+  .pilot-left .ep-no { font-size: clamp(80px, 10vw, 140px); }
+  .pilot-left .runtime { font-size: 10px; gap: 8px; }
+  .pilot-left .desc { font-size: 16px; margin-top: 20px; padding-top: 16px; }
+  .act .lbl { font-size: 9px; letter-spacing: 0.2em; }
+  .act h5 { font-size: clamp(18px, 1.4vw, 22px); }
+  .act p { font-size: 14px; }
+
+  /* Season arc */
+  .season { padding: 20px 16px 18px; }
+  .season .s-no { font-size: clamp(40px, 4.5vw, 60px); }
+  .season .s-sub { font-size: 10px; margin-bottom: 12px; }
+  .season h4 { font-size: clamp(22px, 2vw, 32px); margin-bottom: 12px; }
+  .season .quote { font-size: 15px; padding-left: 12px; margin-bottom: 14px; }
+  .season ul { font-size: 14px; gap: 6px; }
+  .season .climax .lbl { font-size: 10px; }
+  .season .climax .txt { font-size: clamp(16px, 1.3vw, 20px); }
+
+  /* Why now */
+  .why-bullet { grid-template-columns: 40px 1fr; gap: 12px; padding: 10px 0; }
+  .why-bullet .n { font-size: clamp(22px, 1.8vw, 28px); }
+  .why-bullet h5 { font-size: clamp(16px, 1.3vw, 22px); margin-bottom: 4px; }
+  .why-bullet p { font-size: 14px; }
+
+  /* Franchise */
+  .fran-tile { padding: 18px 16px; }
+  .fran-tile .phase { font-size: 10px; }
+  .fran-tile h5 { font-size: clamp(18px, 1.5vw, 24px); }
+  .fran-tile p { font-size: 13px; }
+  .fran-tile .glyph svg { width: 32px; height: 32px; }
+
+  /* Source credits */
+  .src-list h4 { font-size: clamp(20px, 1.6vw, 26px); }
+  .src-row { padding: 8px 0; font-size: 11px; }
+  .src-disclaimer { padding: 14px; font-size: 11px; }
+
+  /* Footer */
+  footer { padding: 56px var(--gutter) 30px; }
+  .footer-diamonds { gap: 18px; margin-bottom: 22px; }
+  .footer-diamonds .d { width: 8px; height: 8px; }
+  .footer-logo { max-width: min(240px, 75vw); margin-bottom: 24px; }
+  .footer-credit { font-size: 9px; letter-spacing: 0.14em; margin-bottom: 18px; }
+  .footer-project { font-size: clamp(28px, 3vw, 44px); margin-bottom: 16px; }
+  .footer-rights { font-size: 13px; margin-bottom: 20px; }
+  .footer-contact { font-size: 10px; padding: 10px 20px; letter-spacing: 0.2em; }
+  .footer-meta { margin-top: 24px; font-size: 9px; letter-spacing: 0.2em; }
+  .footer-meta .sep { margin: 0 6px; }
+  .footer-sub { margin-top: 30px; padding-top: 20px; font-size: 9px; }
+
+  /* Character modal */
+  .cmodal { grid-template-columns: 1fr; max-height: 92vh; }
+  .cmodal .cm-img { min-height: 280px; aspect-ratio: 4 / 3; }
+  .cmodal .cm-body { padding: 28px 22px 28px; }
+  .cmodal .cm-name { font-size: clamp(30px, 3.5vw, 48px); }
+  .cmodal .cm-class { font-size: 11px; }
+  .cmodal .cm-bio { font-size: 16px; }
+  .cmodal .cm-stats { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cmodal .cm-stat .val { font-size: 18px; }
+  .cmodal .cm-abilities li { font-size: 15px; }
+  .cmodal .cm-quote { font-size: 15px; padding: 14px 18px; }
+  .cmodal .cm-close { width: 38px; height: 38px; font-size: 16px; top: 12px; right: 12px; }
+}
+
+/* ---------- ≤ 375px — Small phones (iPhone SE, Galaxy S-series) ---------- */
+@media (max-width: 375px) {
+  :root { --gutter: 14px; }
+
+  .hero-chrome { font-size: 8px; letter-spacing: 0.16em; }
+  .hero-body { gap: 14px; }
+  .hero-quote { font-size: 14px; }
+  .hero-tag .lbl { font-size: 9px; }
+  .hero-tag .comps { font-size: 15px; }
+  .hero-wordmark { font-size: clamp(38px, 10vw, 84px); }
+  .hero-bottom .label { font-size: 9px; }
+  .hero-bottom .logline { font-size: 13px; }
+
+  .logline-quote { font-size: clamp(24px, 4vw, 44px); }
+
+  .h-1 { font-size: clamp(30px, 5vw, 56px); }
+  .h-2 { font-size: clamp(24px, 3.5vw, 40px); }
+  .h-3 { font-size: clamp(20px, 2.4vw, 28px); }
+  .lead { font-size: 16px; }
+  .body { font-size: 15px; }
+
+  .stat .num { font-size: clamp(22px, 2.5vw, 34px); }
+  .stat .lbl { font-size: 10px; }
+
+  .tone-tile { aspect-ratio: 4 / 3; }
+
+  .tier { height: 42px; font-size: 13px; }
+  .tier.t1 { height: 52px; }
+  .hier-note .lbl { font-size: 11px; }
+
+  .halo-wrap { max-width: 200px; }
+  .halo-center .num { font-size: clamp(36px, 4.5vw, 56px); }
+
+  .bead-row { grid-template-columns: 30px 1fr; gap: 10px; }
+  .bead-lg { width: 22px; height: 22px; }
+
+  .tension-card .choice { font-size: clamp(18px, 1.8vw, 26px); }
+
+  .tourn-step { grid-template-columns: 30px 1fr; gap: 10px; }
+  .tourn-step .n { font-size: clamp(22px, 2.4vw, 34px); }
+
+  .pilot-left .ep-no { font-size: clamp(64px, 8vw, 120px); }
+  .pilot-left .desc { font-size: 15px; }
+
+  .season .s-no { font-size: clamp(36px, 4vw, 52px); }
+  .season h4 { font-size: clamp(20px, 1.8vw, 28px); }
+
+  .why-stat .num { font-size: clamp(30px, 4vw, 48px); }
+  .why-bullet { grid-template-columns: 32px 1fr; gap: 10px; }
+
+  .cls-card { padding: 10px; }
+  .cls-card h5 { font-size: 15px; }
+  .cls-card p { font-size: 12px; }
+
+  .char-meta .h-3 { font-size: 20px; }
+  .char-meta p { font-size: 13px; }
+
+  .fran-tile { padding: 14px 12px; }
+
+  .cmodal .cm-img { min-height: 220px; }
+  .cmodal .cm-body { padding: 22px 16px 22px; }
+  .cmodal .cm-name { font-size: 28px; }
+  .cmodal .cm-bio { font-size: 15px; }
+  .cmodal .cm-stats { grid-template-columns: 1fr; }
+  .cmodal .cm-abilities li { font-size: 14px; }
+  .cmodal .cm-quote { font-size: 14px; }
+
+  .footer-logo { max-width: min(200px, 70vw); }
+  .footer-project { font-size: clamp(24px, 2.5vw, 36px); }
+  .footer-rights { font-size: 12px; }
+  .footer-actions { gap: 10px; }
+  .footer-contact { padding: 9px 16px; font-size: 9px; max-width: 240px; }
 }
