@@ -6,7 +6,7 @@ A [Thiink Media Graphics](https://thiinkmediagraphics.com) property · Draft 1.0
 
 ## View Site
 
-[View Slide Deck](https://jrlordmoose.github.io/god-smack-show-idea/)
+[View Pitch](https://jrlordmoose.github.io/god-smack-show-idea/)
 
 ---
 
