@@ -1430,6 +1430,13 @@ footer::after {
   color: var(--bone-2);
   margin-bottom: 26px;
 }
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 4px;
+}
 .footer-contact {
   display: inline-block;
   font-family: var(--font-mono);
@@ -1443,6 +1450,12 @@ footer::after {
   transition: background 240ms ease, color 240ms ease, transform 240ms ease;
 }
 .footer-contact:hover { background: var(--gold); color: var(--ink); transform: translateY(-2px); }
+.footer-sub a {
+  color: var(--gold-light);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+.footer-sub a:hover { color: var(--gold); }
 .footer-meta {
   margin-top: 36px;
   font-family: var(--font-mono);
