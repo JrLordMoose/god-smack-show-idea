@@ -1386,10 +1386,18 @@ footer::after {
   box-shadow: 0 0 12px rgba(184,146,74,0.4);
 }
 .footer-logo {
-  max-width: 360px;
-  margin-bottom: 32px;
+  max-width: min(360px, 88vw);
+  margin: 0 auto 32px;
 }
-.footer-logo svg { width: 100%; height: auto; fill: var(--gold); display: block; }
+.footer-logo a {
+  display: block;
+  line-height: 0;
+}
+.footer-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .footer-credit {
   font-family: var(--font-mono);
   font-size: 13px;

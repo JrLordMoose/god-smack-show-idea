@@ -11,6 +11,7 @@ desktop.ini
 
 # Hosted on GitHub manually — do not commit or overwrite from local
 assets/
+!assets/thiink-logo.svg
 
 # Local dev / QA screenshots (not needed for the live site)
 debug/
