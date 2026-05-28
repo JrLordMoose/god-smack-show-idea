@@ -89,17 +89,10 @@ Suggested repo name: `god-smack` or `god-smack-pitch`.
 
 ### 2. Enable Pages
 
-**Option A — GitHub Actions (recommended, included in this repo)**
-
 1. On GitHub: **Settings → Pages**
-2. **Build and deployment → Source:** select **GitHub Actions**
-3. Push to `main` — the workflow in [`.github/workflows/pages.yml`](.github/workflows/pages.yml) deploys the repo root as a static site
-
-**Option B — Deploy from branch**
-
-1. **Settings → Pages → Source:** Deploy from a branch
-2. Branch: `main` · Folder: `/ (root)`
-3. Save
+2. **Build and deployment → Source:** Deploy from a branch
+3. Branch: `main` · Folder: `/ (root)`
+4. Save — GitHub publishes the repo root (`index.html`) as the site
 
 `.nojekyll` is included so Jekyll does not process the site.
 
