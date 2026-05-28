@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GOD SMACK! — Investor Pitch Deck</title>
+<meta name="viewport" content="width=1920">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Stencil+Display:wght@700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="deck.css">
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style="background:#ECE4D2">
+    <circle cx="100" cy="100" r="48" fill="none" stroke="#9E1B1B" stroke-width="6"/>
+    <circle cx="100" cy="100" r="32" fill="none" stroke="#B8924A" stroke-width="2"/>
+    <text x="100" y="108" text-anchor="middle" font-family="Impact,sans-serif" font-size="22" fill="#9E1B1B" font-weight="900">GS!</text>
+  </svg>
+</template>
+</head>
+
+<body>
+
+<!-- shared SVG defs: distress filter for wordmark, etc. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="distress" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.4"/>
+    </filter>
+    <filter id="distress-strong" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4"/>
+    </filter>
+  </defs>
+</svg>
+
+<deck-stage>
+
+  <!-- ============================================================
+       SLIDE 01 — COVER
+       ============================================================ -->
+  <section class="slide" id="slide-01" data-screen-label="01 Cover">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">A Thiink Media Graphics Property</span></div>
+      <div>An Original Anime Universe · Pitch Deck · 2026</div>
+    </div>
+
+    <div class="cover-grid">
+      <div class="cover-quote">
+        "Every god was once just a name<br>someone whispered in the dark."
+      </div>
+      <div class="cover-tag">
+        <div class="label">Inspired by the art of</div>
+        <div class="comps">Berserk · Devilman Crybaby<br>Fullmetal Alchemist · Devil May Cry</div>
+      </div>
+
+      <div class="cover-hero-wrap">
+        <image-slot id="cover-hero" placeholder="HERO KEY VISUAL — KAIRU, BLOODIED, HALO RING IGNITED · WIDE EDITORIAL" shape="rect" src="assets/img/01-cover-hero.png"></image-slot>
+      </div>
+      <div class="cover-vert-wrap">
+        <image-slot id="cover-vorath" placeholder="VORATH THE UNFINISHED — THRONE, LEFT ARM RAW LIGHT · PORTRAIT" shape="rect" src="assets/img/10-vorath.png"></image-slot>
+      </div>
+
+      <div class="cover-bottom">
+        <div class="cover-wordmark">GOD&nbsp;SMACK<span class="ex">!</span></div>
+        <div class="cover-meta">
+          <div class="label">Logline</div>
+          <div class="logline">Where gods compete for creation itself — and a clanless boy walks into the tournament with nothing to lose.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">Centuria · The Center of All Universes</div>
+      <div class="pageno">01 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 02 — LOGLINE
+       ============================================================ -->
+  <section class="slide" id="slide-02" data-screen-label="02 Logline">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">The Premise · 02</span></div>
+      <div>God Smack! · Logline</div>
+    </div>
+
+    <div class="logline-grid">
+      <div class="logline-quote">
+        Every <em>100,000 years</em>, the gods are summoned<br>
+        to compete for the <em>throne of creation</em>.<br>
+        <span style="color:var(--ink-mute);">This time</span> — a boy with <em>no clan</em>,<br>
+        <em>no class</em>, and <em>no name</em> shows up.
+      </div>
+
+      <div class="logline-bottom">
+        <div class="logline-comps">
+          <div class="kicker">Inspired by the art of</div>
+          <div class="h-3" style="margin-top:12px;color:var(--ink);font-size:32px;">Berserk &nbsp;×&nbsp; Devilman Crybaby</div>
+          <div class="h-3" style="margin-top:4px;color:var(--ink);font-size:32px;">Fullmetal Alchemist &nbsp;×&nbsp; Devil May Cry</div>
+          <div class="body-sm" style="margin-top:12px;max-width:620px;font-size:18px;">A mythic tournament shōnen for an audience that has aged into <em style="font-style:normal;font-weight:700;color:var(--blood);">prestige horror, ritual violence, and meta-religious worldbuilding.</em></div>
+        </div>
+
+        <div class="logline-mech">
+          <div class="kicker" style="justify-content:flex-end;">Format</div>
+          <div class="h-3" style="margin-top:12px;color:var(--ink);font-size:32px;">12 Episodes · Season One</div>
+          <div class="h-3" style="margin-top:4px;color:var(--ink);font-size:32px;">30 Min · Animated</div>
+          <div class="body-sm" style="margin-top:12px;font-size:18px;max-width:620px;">Designed for streaming-first release with a built-in <em style="font-style:normal;font-weight:700;color:var(--blood);">multi-season tournament structure</em> and franchise-scale IP from day one.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">"Every god was once just a name whispered in the dark."</div>
+      <div class="pageno">02 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 03 — THE WORLD: CENTURIA
+       ============================================================ -->
+  <section class="slide" id="slide-03" data-screen-label="03 The World">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">The World · 03</span></div>
+      <div>Centuria · Cosmic Capital</div>
+    </div>
+
+    <div class="world-grid">
+      <div class="world-left">
+        <div class="kicker">The Setting</div>
+        <h1 class="h-1" style="margin-top:20px;font-size:84px;line-height:1.05;">Centuria.<br><span class="blood">The center<br>of all universes.</span></h1>
+        <div class="divider-blood" style="margin-top:28px;"></div>
+        <p class="body" style="margin:0;font-size:22px;max-width:760px;">An ever-expanding city, drawn to the gravitational center of existence by millennia of collective worship.</p>
+        <p class="body" style="margin-top:14px;font-size:22px;max-width:760px;">It pulses with <span style="color:var(--blood);font-weight:600;">Auri</span> — the ambient energy of prayer from every inhabited world. At its center: the palace of the <span style="color:var(--blood);font-weight:600;">Radiant Sovereign</span>, the God King. The absolute authority over all of creation.</p>
+
+        <div class="world-stats">
+          <div class="stat"><div class="num">∞</div><div class="lbl">Inhabited<br>Universes</div></div>
+          <div class="stat"><div class="num">100K</div><div class="lbl">Year<br>Tournament Cycle</div></div>
+          <div class="stat"><div class="num">7+</div><div class="lbl">Active<br>God Clans</div></div>
+          <div class="stat"><div class="num">14</div><div class="lbl">Attribute<br>Classes</div></div>
+        </div>
+      </div>
+
+      <div class="world-right">
+        <image-slot id="world-hero" placeholder="CENTURIA — CITY OF IMPOSSIBLE LAYERED ARCHITECTURE, FLOATING AT COSMIC CENTER · TALL / EDITORIAL" shape="rect" src="assets/img/03-centuria.png"></image-slot>
+        <div class="bracket-corner tl" style="border-color:var(--blood);"></div>
+        <div class="bracket-corner tr" style="border-color:var(--blood);"></div>
+        <div class="bracket-corner bl" style="border-color:var(--blood);"></div>
+        <div class="bracket-corner br" style="border-color:var(--blood);"></div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">"The older the stone, the louder the prayer."</div>
+      <div class="pageno">03 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 04 — TONE REEL
+       ============================================================ -->
+  <section class="slide" id="slide-04" data-screen-label="04 Tone Reel">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Tone Reel · 04</span></div>
+      <div>Visual Mood · Reference Library</div>
+    </div>
+
+    <div style="position:absolute;top:130px;left:100px;right:100px;display:flex;justify-content:space-between;align-items:flex-end;z-index:4;">
+      <div>
+        <div class="kicker">Visual DNA</div>
+        <h2 class="h-2" style="margin-top:14px;max-width:1100px;">Sacred violence.<br>Industrial scale. <span class="blood">Human eyes.</span></h2>
+      </div>
+      <div class="mono-tag" style="text-align:right;max-width:380px;line-height:1.7;">
+        Reference frames only.<br>
+        Drag art onto slots →
+      </div>
+    </div>
+
+    <div class="tone-grid" style="padding-top:340px;">
+      <div class="tone-card">
+        <image-slot id="tone-1" placeholder="RITUAL — TEMPLE INTERIOR, GOLD LIGHT, KNEELING FIGURE" shape="rect" src="assets/img/04-01-ritual.png"></image-slot>
+        <div class="cap"><span>Ritual</span><span class="blood">01</span></div>
+      </div>
+      <div class="tone-card">
+        <image-slot id="tone-2" placeholder="VIOLENCE — KINETIC COMBAT, IMPACT FRAME, BLOOD ARC" shape="rect" src="assets/img/04-02-violence.png"></image-slot>
+        <div class="cap"><span>Violence</span><span class="blood">02</span></div>
+      </div>
+      <div class="tone-card">
+        <image-slot id="tone-3" placeholder="SCALE — TINY FIGURE BEFORE COSMIC ARCHITECTURE" shape="rect" src="assets/img/04-03-scale.png"></image-slot>
+        <div class="cap"><span>Scale</span><span class="blood">03</span></div>
+      </div>
+      <div class="tone-card">
+        <image-slot id="tone-4" placeholder="INTIMACY — TWO FACES, LOW LIGHT, BREATH" shape="rect" src="assets/img/04-04-intimacy.png"></image-slot>
+        <div class="cap"><span>Intimacy</span><span class="blood">04</span></div>
+      </div>
+      <div class="tone-card">
+        <image-slot id="tone-5" placeholder="HORROR — A GOD CRACKED OPEN, LIGHT BLEEDING OUT" shape="rect" src="assets/img/04-05-horror.png"></image-slot>
+        <div class="cap"><span>Horror</span><span class="blood">05</span></div>
+      </div>
+      <div class="tone-card">
+        <image-slot id="tone-6" placeholder="MOTION — STRIDEMARK BLINK, AFTER-IMAGE STREAK" shape="rect" src="assets/img/04-06-motion.png"></image-slot>
+        <div class="cap"><span>Motion</span><span class="blood">06</span></div>
+      </div>
+      <div class="tone-card">
+        <image-slot id="tone-7" placeholder="MYTH — WOODBLOCK / RELIEF / SACRED TEXT TEXTURE" shape="rect" src="assets/img/04-07-myth.png"></image-slot>
+        <div class="cap"><span>Myth</span><span class="blood">07</span></div>
+      </div>
+      <div class="tone-card">
+        <image-slot id="tone-8" placeholder="DECAY — RUIN, ASH, FADED GOD MONUMENT" shape="rect" src="assets/img/04-08-decay.png"></image-slot>
+        <div class="cap"><span>Decay</span><span class="blood">08</span></div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">Tone references for visual purposes only · See sources slide 15</div>
+      <div class="pageno">04 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 05 — DIVINE HIERARCHY
+       ============================================================ -->
+  <section class="slide" id="slide-05" data-screen-label="05 Divine Hierarchy">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Society · 05</span></div>
+      <div>The Caste System of Centuria</div>
+    </div>
+
+    <div class="hier-grid">
+      <div class="hier-notes">
+        <div class="kicker">Five Tiers</div>
+        <h1 class="h-1" style="margin-top:18px;">Rank is not<br>inherited.<br><span class="blood">It is earned in<br>worship.</span></h1>
+        <div class="divider-blood" style="margin-top:24px;"></div>
+        <div class="hier-note">
+          <div class="lbl">The Ordained</div>
+          <div class="txt">200+ worship beads. Hold formal titles announcing their domain: <em style="color:var(--ink);font-weight:600;font-style:normal;">"Grisembore, Ordained of Knowledge and Flight."</em></div>
+        </div>
+        <div class="hier-note">
+          <div class="lbl">The Ascended</div>
+          <div class="txt">The bureaucracy of gods — laws, schools, the roads between stars.</div>
+        </div>
+        <div class="hier-note">
+          <div class="lbl">The Commonborn</div>
+          <div class="txt">The majority. Their one shot at ascension comes once every 100,000 years.</div>
+        </div>
+      </div>
+
+      <div class="col" style="align-items:center;gap:24px;">
+        <div class="pyramid">
+          <div class="tier t1"><span class="label">Radiant Sovereign</span></div>
+          <div class="tier t2"><span class="label">Ordained</span></div>
+          <div class="tier t3"><span class="label">The Ascended</span></div>
+          <div class="tier t4"><span class="label">Commonborn</span></div>
+          <div class="tier t5"><span class="label">Bound Ones · Magical Companions</span></div>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:28px;align-items:center;">
+          <div class="seal-mark">✦</div>
+          <div class="mono-tag" style="max-width:380px;line-height:1.6;">
+            CURRENT SOVEREIGN<br>
+            <span style="font-family:var(--font-display);font-size:30px;letter-spacing:0;color:var(--blood);">Vorath the Unfinished</span><br>
+            Triple-class · Reigning unchallenged
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">"You are what they remember of you."</div>
+      <div class="pageno">05 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 06 — THE GOD KING TOURNAMENT
+       ============================================================ -->
+  <section class="slide" id="slide-06" data-screen-label="06 The Tournament">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">The Competition · 06</span></div>
+      <div>The God King Tournament</div>
+    </div>
+
+    <div style="position:absolute;top:130px;left:110px;right:110px;z-index:4;">
+      <div class="kicker">Core Engine</div>
+      <h1 class="h-1" style="margin-top:14px;max-width:1300px;">100,000 years.<br>100 worlds. <span class="blood">One throne.</span></h1>
+    </div>
+
+    <div class="tourn-wrap" style="padding-top:380px;">
+      <div class="tourn-steps">
+        <div class="step">
+          <div class="n">01</div>
+          <div><h4>Enter the Tournament</h4><p>Every 100,000 years. Any Commonborn god may compete. A Halo Ring appears above their head — the race begins.</p></div>
+        </div>
+        <div class="step">
+          <div class="n">02</div>
+          <div><h4>Bead-Walk the Universes</h4><p>Travel to 100 different planets. Perform deeds. Be acknowledged. Earn one worship bead per world.</p></div>
+        </div>
+        <div class="step">
+          <div class="n">03</div>
+          <div><h4>The Ring Ignites</h4><p>At 100 beads the Halo Ring glows and spins. You are now <span class="blood" style="font-weight:600;">Ordained</span>. The universe knows your name.</p></div>
+        </div>
+        <div class="step">
+          <div class="n">04</div>
+          <div><h4>Challenge the God King</h4><p>Face the Radiant Sovereign directly. Win → the throne. Lose → lose <span class="blood" style="font-weight:600;">everything</span>. In the worst cases: obliteration. The erased are called the Faded.</p></div>
+        </div>
+      </div>
+
+      <div class="ring-stage">
+        <div class="halo-wrap">
+          <!-- halo ring with 100 beads (decorative only) -->
+          <svg viewBox="0 0 600 600" aria-hidden="true">
+            <defs>
+              <radialGradient id="ring-glow" cx="50%" cy="50%" r="50%">
+                <stop offset="60%" stop-color="#9E1B1B" stop-opacity="0"/>
+                <stop offset="100%" stop-color="#9E1B1B" stop-opacity="0.18"/>
+              </radialGradient>
+            </defs>
+            <circle cx="300" cy="300" r="270" fill="url(#ring-glow)"/>
+            <circle cx="300" cy="300" r="230" fill="none" stroke="#9E1B1B" stroke-width="3"/>
+            <circle cx="300" cy="300" r="220" fill="none" stroke="#9E1B1B" stroke-width="1" opacity="0.4"/>
+            <circle cx="300" cy="300" r="160" fill="none" stroke="#B8924A" stroke-width="1" stroke-dasharray="3 6" opacity="0.7"/>
+            <g id="halo-beads"></g>
+          </svg>
+          <div class="halo-center">
+            <div class="num">100</div>
+            <div class="lbl">BEADS</div>
+            <div class="sub">→ ORDAINED</div>
+          </div>
+        </div>
+
+        <div class="stakes">
+          <div class="stake-lbl">The Stakes</div>
+          <div class="stake-quote">Become god — or be forgotten.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">"The faded leave no monuments. Only silence."</div>
+      <div class="pageno">06 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 07 — WORSHIP BEADS & THE MAAGI-AGGI
+       ============================================================ -->
+  <section class="slide" id="slide-07" data-screen-label="07 Worship Beads">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Core Mechanic · 07</span></div>
+      <div>Worship Beads &amp; The Maagi-Aggi</div>
+    </div>
+
+    <div class="beads-wrap">
+      <div>
+        <div class="kicker">The Currency of Power</div>
+        <h2 class="h-2" style="margin-top:14px;">Every god<br>wears their<br><span class="blood">prayers</span>.</h2>
+        <p class="body" style="margin-top:24px;max-width:680px;">Beads are how the universe acknowledges a god. They manifest on the Halo Ring, glow with the color of their domain, and are the only currency that buys real power.</p>
+
+        <div class="bead-list">
+          <div class="bead-row">
+            <div class="bead-cell"><span class="bead bead-lg white"></span></div>
+            <div><div class="name">White · Worship</div><div class="desc">Clean acknowledgment from a world. +1 toward the threshold.</div></div>
+            <div class="tag">Currency</div>
+          </div>
+          <div class="bead-row">
+            <div class="bead-cell"><span class="bead bead-lg gold"></span></div>
+            <div><div class="name">Gold · Strength</div><div class="desc">Spent for raw power. Counts as attribute, not toward 100.</div></div>
+            <div class="tag">Attribute</div>
+          </div>
+          <div class="bead-row">
+            <div class="bead-cell"><span class="bead bead-lg violet"></span></div>
+            <div><div class="name">Violet · Death</div><div class="desc">Necromantic power. Raise the fallen. Expensive.</div></div>
+            <div class="tag">Attribute</div>
+          </div>
+          <div class="bead-row">
+            <div class="bead-cell"><span class="bead bead-lg grey"></span></div>
+            <div><div class="name">Storm Grey · Weather</div><div class="desc">Atmospheric command. Stormveil gods covet these.</div></div>
+            <div class="tag">Attribute</div>
+          </div>
+          <div class="bead-row">
+            <div class="bead-cell"><span class="bead bead-lg crimson"></span></div>
+            <div><div class="name">Crimson · War</div><div class="desc">Combat power. Most-sought attribute in tournament.</div></div>
+            <div class="tag">Attribute</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" style="gap:24px;justify-content:flex-end;">
+        <div>
+          <div class="kicker">Ancient Gatekeepers</div>
+          <h3 class="h-3" style="margin-top:14px;color:var(--ink);">The Maagi-Aggi</h3>
+          <p class="body" style="margin-top:14px;">Sacred beings hidden on every inhabited planet. Each holds one unique attribute. Each demands its own price. Finding one is half the battle. Earning their gift is the other half.</p>
+        </div>
+
+        <div class="tension">
+          <div class="kicker">The Core Tension</div>
+          <div class="choice">Spend beads to<br>become powerful —<br><span style="color:var(--gold-light);">or save them<br>and rise faster.</span></div>
+          <div class="body">There is no right answer. Only the choice that <em>reveals who you are</em>. The choice that breaks gods is the same choice the audience makes about them.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">"What you spend on power, you lose on rank. What you save on rank, you lose in battle."</div>
+      <div class="pageno">07 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 08 — THE GOD CLANS
+       ============================================================ -->
+  <section class="slide" id="slide-08" data-screen-label="08 The God Clans">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Factions · 08</span></div>
+      <div>The Seven Clans of Centuria</div>
+    </div>
+
+    <div class="clans-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+        <div>
+          <div class="kicker">Cultural Power Blocs</div>
+          <h2 class="h-2" style="margin-top:10px;">Seven clans.<br>One <span class="blood">city</span>. <span class="gold">No peace.</span></h2>
+        </div>
+        <div class="mono-tag" style="text-align:right;max-width:480px;line-height:1.7;">
+          Each clan is rooted in a real-world mythic tradition.<br>
+          Each has districts, academies, and bead-feuds going back millennia.
+        </div>
+      </div>
+
+      <div class="clan-grid">
+        <div class="clan-card">
+          <span class="clan-bar"></span>
+          <div class="clan-no">CLAN · 01</div>
+          <h4>Aurelian</h4>
+          <div class="tradition">Greek / Roman</div>
+          <p>The most politically dominant. Old money, old power. Built the original tournament framework.</p>
+          <div class="subs">Pantheonix · Mythravax · Stoikal</div>
+        </div>
+        <div class="clan-card">
+          <span class="clan-bar"></span>
+          <div class="clan-no">CLAN · 02</div>
+          <h4>Kemari</h4>
+          <div class="tradition">Egyptian · Yoruba · Hoodoo</div>
+          <p>Power grows from ancestral memory. The further back their lineage, the stronger they are.</p>
+          <div class="subs">Kemetu · Voudari · Hoodori</div>
+        </div>
+        <div class="clan-card">
+          <span class="clan-bar"></span>
+          <div class="clan-no">CLAN · 03</div>
+          <h4>Ashvari</h4>
+          <div class="tradition">Vedic · Buddhist · Taoist</div>
+          <p>The largest clan. Mastery of self before mastery of the world. Internal politics are legendary.</p>
+          <div class="subs">Devhari · Zennari · Taovex</div>
+        </div>
+        <div class="clan-card dark">
+          <span class="clan-bar"></span>
+          <div class="clan-no">CLAN · 04</div>
+          <h4>Vordaan</h4>
+          <div class="tradition">Norse · Germanic</div>
+          <p>Warriors first. Hierarchy by battle record only — no politics, no lineage, only wins.</p>
+          <div class="subs">Norrath · Rünveld · Skoldric</div>
+        </div>
+        <div class="clan-card">
+          <span class="clan-bar"></span>
+          <div class="clan-no">CLAN · 05</div>
+          <h4>Anansi</h4>
+          <div class="tradition">West African · Griot</div>
+          <p>Win beads through wit, story, and misdirection. The most dangerous negotiators in Centuria.</p>
+          <div class="subs">Orishari · Grioti</div>
+        </div>
+        <div class="clan-card">
+          <span class="clan-bar"></span>
+          <div class="clan-no">CLAN · 06</div>
+          <h4>Sunari</h4>
+          <div class="tradition">Aztec · Mayan</div>
+          <p>Feast or famine. They literally spend themselves to earn. Highest burnout rate of any clan.</p>
+          <div class="subs">Solquetz · Xibalba</div>
+        </div>
+        <div class="clan-card">
+          <span class="clan-bar"></span>
+          <div class="clan-no">CLAN · 07</div>
+          <h4>Wakari</h4>
+          <div class="tradition">Native · Plains · Sky</div>
+          <p>Guardians, not conquerors. Protect specific worlds from the interference of other clans.</p>
+          <div class="subs">Skywarden · Spiritsong</div>
+        </div>
+        <div class="clan-card more">
+          <div class="clan-no" style="color:var(--ink-mute);">+ 06 LATENT</div>
+          <h4>And more.</h4>
+          <div class="tradition" style="color:var(--ink-mute);">Story Reserve</div>
+          <p>Shimoji · Draconari · Celestari · Solombrae · Abori · Slavari. Activated as the series expands.</p>
+          <div class="subs" style="border-top-color:var(--ink-mute);color:var(--ink-mute);">Long-arc franchise depth</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">Real myths. New gods. Centuria's politics rhyme with our own.</div>
+      <div class="pageno">08 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 09 — ATTRIBUTE CLASSES
+       ============================================================ -->
+  <section class="slide" id="slide-09" data-screen-label="09 Attribute Classes">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Power System · 09</span></div>
+      <div>The 14 Attribute Classes</div>
+    </div>
+
+    <div class="cls-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+        <div>
+          <div class="kicker">Power System</div>
+          <h2 class="h-2" style="margin-top:10px;">Class is not chosen.<br><span class="blood">It manifests.</span></h2>
+        </div>
+        <p class="body" style="max-width:560px;margin:0;">A god's class defines how they fight, how they earn beads, and how the universe sees them. <em style="color:var(--blood);font-weight:600;font-style:normal;">14 classes across 5 categories. Each is a different show.</em></p>
+      </div>
+
+      <div class="cls-cats">
+        <!-- Primal -->
+        <div class="cls-cat">
+          <div class="cat-head">Primal</div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead blue"></span><h5>Stormveil</h5></div>
+            <div class="dom">Sky · Storm · Thunder</div>
+            <p>Vertical fighters. Attack from above. Lightning, pressure, altitude.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead teal"></span><h5>Tidesoul</h5></div>
+            <div class="dom">Water · Ocean · Flow</div>
+            <p>Adaptive. Redirect force. Outlast everything.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead orange"></span><h5>Ashborn</h5></div>
+            <div class="dom">Fire · Forge · Destruction</div>
+            <p>Pure aggression. Gods of combustion and creation both.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead green"></span><h5>Rootbound</h5></div>
+            <div class="dom">Earth · Nature · Endurance</div>
+            <p>Immovable. Draw power from terrain the longer they fight.</p>
+          </div>
+        </div>
+
+        <!-- Mind -->
+        <div class="cls-cat">
+          <div class="cat-head">Mind</div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead indigo"></span><h5>Loresight</h5></div>
+            <div class="dom">Knowledge · Wisdom · Sight</div>
+            <p>Win before the fight starts. Read entire histories with a touch.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead smoke"></span><h5>Veilwalker</h5></div>
+            <div class="dom">Trickster · Illusion · Shadow</div>
+            <p>Never where you think. Never what they appear to be.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead rose"></span><h5>Voxborn</h5></div>
+            <div class="dom">Sound · Music · Resonance</div>
+            <p>Weaponized frequency. Their silence is as dangerous as their voice.</p>
+          </div>
+        </div>
+
+        <!-- Soul -->
+        <div class="cls-cat">
+          <div class="cat-head">Soul</div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead violet"></span><h5>Wraithcaller</h5></div>
+            <div class="dom">Death · Ancestors · Void</div>
+            <p>Half in the afterlife always. Drain souls. Summon the Faded.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead gold"></span><h5>Hearthkin</h5></div>
+            <div class="dom">Life · Healing · Fertility</div>
+            <p>Impossible to defeat by attrition. Most consistent bead earners.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead crimson"></span><h5>Bondsayer</h5></div>
+            <div class="dom">Love · Loyalty · Devotion</div>
+            <p>Forge and sever bonds as physical weapons. Politically lethal.</p>
+          </div>
+        </div>
+
+        <!-- Motion -->
+        <div class="cls-cat">
+          <div class="cat-head">Motion</div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead amber"></span><h5>Stridemark</h5></div>
+            <div class="dom">Travel · Messenger · Speed</div>
+            <p>Fastest beings alive. Move between universes like crossing a room.</p>
+          </div>
+          <div class="cls-card">
+            <div class="cls-head"><span class="bead silver"></span><h5>Fatewoven</h5></div>
+            <div class="dom">Fate · Time · Probability</div>
+            <p>See probability threads. Never surprised. Banned from bead wagers.</p>
+          </div>
+        </div>
+
+        <!-- Apex -->
+        <div class="cls-cat">
+          <div class="cat-head apex">Rare · Apex</div>
+          <div class="cls-card apex">
+            <span class="apex-tag">APEX</span>
+            <div class="cls-head"><span class="bead black"></span><h5>Voidshaper</h5></div>
+            <div class="dom">Creation · Destruction · Existence</div>
+            <p>Can unmake reality. Nearly extinct. One is rumored hidden in Centuria.</p>
+          </div>
+          <div class="cls-card apex">
+            <span class="apex-tag">APEX</span>
+            <div class="cls-head"><span class="bead white-gold"></span><h5>Solarbound</h5></div>
+            <div class="dom">Light · Radiance · Purification</div>
+            <p>Natural counter to deception and death. Sacred to their worshippers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">"You don't pick your class. Your class picks you — and ruins your life."</div>
+      <div class="pageno">09 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 10 — KEY CHARACTERS
+       ============================================================ -->
+  <section class="slide" id="slide-10" data-screen-label="10 Key Characters">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">The Cast · 10</span></div>
+      <div>Key Characters · Season One</div>
+    </div>
+
+    <div class="chars-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+        <div>
+          <div class="kicker">The Cast</div>
+          <h2 class="h-2" style="margin-top:10px;">The boy.<br>The god.<br><span class="blood">The witnesses.</span></h2>
+        </div>
+        <p class="body" style="max-width:520px;margin:0;">Four faces carry season one. Each pulls a different audience — the underdog, the icon, the rival, the conscience.</p>
+      </div>
+
+      <div class="chars-grid">
+        <!-- KAIRU -->
+        <div class="char-card hero">
+          <image-slot id="char-kairu" placeholder="KAIRU — CLANLESS BOY, HALO RING UNLIT, DEFIANT POSE · 3:4" shape="rect" src="assets/img/10-kairu.png"></image-slot>
+          <div class="char-meta">
+            <div class="char-no">PROTAGONIST · 01</div>
+            <h4>Kairu</h4>
+            <div class="role">Commonborn · Clanless · Class unknown</div>
+            <p>No clan. No training. No explanation. Enters the tournament on pure instinct — and refuses to lose. <em style="color:var(--bone);font-style:normal;font-weight:600;">The mystery of his true class drives Season One.</em></p>
+          </div>
+        </div>
+
+        <!-- VORATH -->
+        <div class="char-card">
+          <image-slot id="char-vorath" placeholder="VORATH — RADIANT SOVEREIGN, LEFT ARM RAW LIGHT, THRONE · 3:4" shape="rect" src="assets/img/10-vorath.png"></image-slot>
+          <div class="char-meta">
+            <div class="char-no">ANTAGONIST · 02</div>
+            <h4>Vorath the Unfinished</h4>
+            <div class="role">Radiant Sovereign · Triple-class</div>
+            <p>His left arm is pure unsolidified light. Ancient. Patient. Allows the tournament because he finds challengers <em style="color:var(--gold-light);font-style:italic;">interesting</em>.</p>
+          </div>
+        </div>
+
+        <!-- SEVRYN -->
+        <div class="char-card">
+          <image-slot id="char-sevryn" placeholder="SEVRYN — AURELIAN MASK, COMPOSED, GOLD-EDGED · 3:4" shape="rect" src="assets/img/10-sevryn.png"></image-slot>
+          <div class="char-meta">
+            <div class="char-no">RIVAL · 03</div>
+            <h4>Sevryn Mythravax</h4>
+            <div class="role">Aurelian Clan · 80 beads · Loresight / Veilwalker</div>
+            <p>Always masked. Always three steps ahead. He already knows what Kairu is — and is watching to see what Kairu does with it.</p>
+          </div>
+        </div>
+
+        <!-- OMI -->
+        <div class="char-card">
+          <image-slot id="char-omi" placeholder="OMI — VOUDARI SPIRIT-WALKER, COWRIE SHELLS, COLD AURA · 3:4" shape="rect" src="assets/img/10-omi.png"></image-slot>
+          <div class="char-meta">
+            <div class="char-no">ALLY · 04</div>
+            <h4>Omi Voudari</h4>
+            <div class="role">Kemari Clan · Voudari · Wraithcaller</div>
+            <p>Speaks to the dead as casually as the living. Her space is always colder. Her presence unsettles everyone — except Kairu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">+ Brix, the Bound One · the hype-man. The animal mascot the merch team will love.</div>
+      <div class="pageno">10 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 11 — PILOT EPISODE
+       ============================================================ -->
+  <section class="slide" id="slide-11" data-screen-label="11 Pilot Synopsis">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Pilot · 11</span></div>
+      <div>Episode 1 · 30 Minutes</div>
+    </div>
+
+    <div class="pilot-wrap">
+      <div class="pilot-left">
+        <div class="kicker">Episode One</div>
+        <div class="ep-no">01</div>
+        <h3>The Boy<br>Who<br>Wasn't<br>Invited.</h3>
+        <div class="runtime"><span>30 MIN</span><span>·</span><span>COLD OPEN → 4 ACTS → TAG</span></div>
+        <div style="margin-top:30px;padding-top:24px;border-top:1px solid var(--ink);font-family:var(--font-body);font-size:19px;line-height:1.45;color:var(--ink-2);max-width:520px;">
+          We open the series in the back streets of Centuria — not the marble plazas, not the temples. A clanless boy. A scavenged life. A tournament he is told he is not allowed to enter. And the cosmic accident that proves the gods wrong.
+        </div>
+      </div>
+
+      <div class="pilot-acts">
+        <div class="act">
+          <div class="act-lbl">COLD OPEN<br>00:00 — 03:00</div>
+          <div>
+            <h5>The Faded</h5>
+            <p>An Ordained god of fire is challenged at the throne. He loses. We watch him erased from existence in front of his worshippers — universe-wide. Centuria celebrates. A child watches from a slum window. We see his eyes. We don't yet know his name.</p>
+          </div>
+        </div>
+        <div class="act">
+          <div class="act-lbl">ACT I<br>03:00 — 10:00</div>
+          <div>
+            <h5>Kairu</h5>
+            <p>The cycle has reset. Halo Rings appear over every Commonborn god across Centuria. They do not appear over Kairu. He goes to the Hall of Acknowledgment. He is laughed out. Then assaulted. Then — for the first time in the show — something pushes back.</p>
+          </div>
+        </div>
+        <div class="act">
+          <div class="act-lbl">ACT II<br>10:00 — 18:00</div>
+          <div>
+            <h5>Witness</h5>
+            <p>Omi Voudari sees what happened from a balcony. She is the only one who recognizes the residue — the half-breath of a class no living god has carried in eight cycles. She finds Kairu before the Ascended do. She tells him to run.</p>
+          </div>
+        </div>
+        <div class="act">
+          <div class="act-lbl">ACT III<br>18:00 — 26:00</div>
+          <div>
+            <h5>The First Bead</h5>
+            <p>Kairu and Omi flee through a transit lane and land on an Unlit world. A village under siege. Kairu intervenes for reasons he can't articulate. Saves a child. The villagers pray. A Halo Ring ignites above him for the first time — and a single white bead burns into place.</p>
+          </div>
+        </div>
+        <div class="act">
+          <div class="act-lbl">TAG<br>26:00 — 30:00</div>
+          <div>
+            <h5>The Watcher</h5>
+            <p>Centuria. A masked figure receives the report of an unauthorized Halo Ring activation. He smiles for the first time the audience has seen. <em style="color:var(--blood);font-style:normal;font-weight:600;">"Show me what you do with it, then."</em> Cut to black. End credits roll over the sound of one bead clicking into a ring.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">"Episode 1 is the entire show in miniature — and ends on a hook that earns episode 2."</div>
+      <div class="pageno">11 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 12 — SEASON ARC
+       ============================================================ -->
+  <section class="slide" id="slide-12" data-screen-label="12 Season Arc">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Series Arc · 12</span></div>
+      <div>Seasons 01 → 03 · Three-Season Greenlight</div>
+    </div>
+
+    <div class="arc-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+        <div>
+          <div class="kicker">The Long Game</div>
+          <h2 class="h-2" style="margin-top:10px;">A tournament<br>structured for <span class="blood">three seasons</span>.</h2>
+        </div>
+        <p class="body" style="max-width:540px;margin:0;">Each season is a self-contained tournament arc with its own climax, its own villain, and its own scaling of the cosmic stakes.</p>
+      </div>
+
+      <div class="arc-grid">
+        <div class="season s1">
+          <div class="s-no">01</div>
+          <div class="s-sub">12 Episodes · The Bead-Walk</div>
+          <h4>The Boy<br>Without a Class</h4>
+          <div class="quote">Kairu walks his first ten worlds and learns that worship is not the same as love.</div>
+          <ul>
+            <li>Earns first 25 beads</li>
+            <li>Meets Sevryn, Omi, Brix</li>
+            <li>Discovers the Maagi-Aggi</li>
+            <li>First clan war erupts around him</li>
+          </ul>
+          <div class="climax"><div class="lbl">Season Climax</div><div class="txt">The class<br>reveals itself.</div></div>
+        </div>
+
+        <div class="season s2">
+          <div class="s-no">02</div>
+          <div class="s-sub">13 Episodes · The Reckoning</div>
+          <h4>The Clans<br>Wake Up</h4>
+          <div class="quote">Centuria realizes what Kairu is. The Aurelians issue a kill order. The Vordaan want to fight him fair.</div>
+          <ul>
+            <li>Vorath's silence becomes a question</li>
+            <li>Faded gods begin to echo back</li>
+            <li>Sevryn's true allegiance fractures</li>
+            <li>Bead total: 25 → 70</li>
+          </ul>
+          <div class="climax"><div class="lbl">Season Climax</div><div class="txt">The first<br>Maagi-Aggi falls.</div></div>
+        </div>
+
+        <div class="season s3">
+          <div class="s-no">03</div>
+          <div class="s-sub">12 Episodes · The Throne</div>
+          <h4>The God<br>King Stands</h4>
+          <div class="quote">100 beads. The Ring ignites. Kairu steps into Vorath's chamber. The unfinished arm finally moves.</div>
+          <ul>
+            <li>The Ordained title ceremony</li>
+            <li>The Challenge: live, universe-wide</li>
+            <li>The reveal of the Three Voidshapers</li>
+            <li>What it costs to win</li>
+          </ul>
+          <div class="climax"><div class="lbl">Season Climax</div><div class="txt">A new<br>sovereign.<br>A new world.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">37 episodes total · ~18.5 hours · Built for binge release and seasonal event campaigns.</div>
+      <div class="pageno">12 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 13 — WHY NOW / MARKET
+       ============================================================ -->
+  <section class="slide" id="slide-13" data-screen-label="13 Why Now">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Market · 13</span></div>
+      <div>The Investment Case</div>
+    </div>
+
+    <div class="why-wrap">
+      <div class="why-left">
+        <div class="kicker">Why Now</div>
+        <h1 class="h-1" style="margin-top:18px;">Anime is no<br>longer niche.<br><span class="blood">It is the next<br>franchise tier.</span></h1>
+        <div class="divider-blood" style="margin-top:30px;"></div>
+        <p class="body" style="max-width:680px;">The audience that grew up on Naruto and Bleach is now thirty-five, has disposable income, and is buying anime IP at a record clip. The platforms know it. The merch numbers prove it. The next decade belongs to original anime universes — not adaptations.</p>
+
+        <div class="why-stats">
+          <div class="why-stat"><div class="num">$34B</div><div class="lbl">Global Anime Industry<br>by 2030 (projected)</div></div>
+          <div class="why-stat"><div class="num">800M+</div><div class="lbl">Global Anime<br>Viewers Today</div></div>
+          <div class="why-stat"><div class="num">×3</div><div class="lbl">Streaming Anime Demand<br>vs. 2020 Baseline</div></div>
+          <div class="why-stat"><div class="num">#1</div><div class="lbl">Fastest-Growing<br>Premium Genre · NA</div></div>
+        </div>
+      </div>
+
+      <div class="why-right">
+        <div class="kicker">The Opening</div>
+        <h2 class="h-2" style="margin-top:14px;">Four reasons<br>this lands now.</h2>
+
+        <div class="why-bullets">
+          <div class="why-bullet">
+            <div class="n">01</div>
+            <div><h5>Tournament Format = Streaming Gold</h5><p>A built-in episodic engine with multi-season escalation. Investors fund three arcs, not three pilots.</p></div>
+          </div>
+          <div class="why-bullet">
+            <div class="n">02</div>
+            <div><h5>Original IP &gt; Adaptation</h5><p>No licensing ceiling. We own the world, the characters, the merch, the games, the spinoffs. 100% creator-controlled.</p></div>
+          </div>
+          <div class="why-bullet">
+            <div class="n">03</div>
+            <div><h5>Mythic Diversity = Global Reach</h5><p>Seven clans rooted in seven real-world traditions. Built-in cultural relevance from Lagos to Mumbai to Oaxaca to Osaka.</p></div>
+          </div>
+          <div class="why-bullet">
+            <div class="n">04</div>
+            <div><h5>Toyetic by Design</h5><p>14 classes · 100+ beads · 7 clan sigils. Every system was engineered for collectible economies before the pilot was written.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">Market figures are illustrative and pulled from public industry reports. To be sourced and verified pre-investor circulation.</div>
+      <div class="pageno">13 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 14 — FRANCHISE & MERCH
+       ============================================================ -->
+  <section class="slide" id="slide-14" data-screen-label="14 Franchise & Merch">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Franchise · 14</span></div>
+      <div>IP Expansion Map</div>
+    </div>
+
+    <div class="fran-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+        <div>
+          <div class="kicker">Franchise Strategy</div>
+          <h2 class="h-2" style="margin-top:10px;">The show is the<br>cathedral. <span class="blood">Everything<br>else is the city.</span></h2>
+        </div>
+        <p class="body" style="max-width:540px;margin:0;">Eight expansion lanes, sequenced so each one funds the next and the IP scales without diluting the core.</p>
+      </div>
+
+      <div class="fran-grid">
+        <div class="fran-tile blood">
+          <div class="phase">PHASE 01 · CORE</div>
+          <h5>The Anime</h5>
+          <p>Season One. 12 episodes. The flagship that builds the world and the audience.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="6" y="10" width="36" height="28" rx="2"/><path d="M20 18l10 6-10 6z" fill="currentColor"/></svg></div>
+        </div>
+
+        <div class="fran-tile">
+          <div class="phase">PHASE 01 · CORE</div>
+          <h5>The Manga</h5>
+          <p>Parallel manga release. Same canon. Different rhythm. Pre-launches the world before episode one airs.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 10h32v28H8z"/><path d="M24 10v28M14 18h6M14 24h6M28 18h6M28 24h6"/></svg></div>
+        </div>
+
+        <div class="fran-tile dark">
+          <div class="phase">PHASE 02 · DEPTH</div>
+          <h5>Companion Bible</h5>
+          <p>Illustrated world bible. Lore for the obsessives. Pre-order at announce. Becomes a bookstore object.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 6h22a6 6 0 016 6v30H16a6 6 0 01-6-6V6z"/><path d="M10 36a6 6 0 016-6h22"/></svg></div>
+        </div>
+
+        <div class="fran-tile">
+          <div class="phase">PHASE 02 · DEPTH</div>
+          <h5>Collectibles</h5>
+          <p>Bead replicas. Halo ring pendants. Clan sigil pins. Engineered into the show's plot — not bolted on.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="6"/></svg></div>
+        </div>
+
+        <div class="fran-tile">
+          <div class="phase">PHASE 03 · SCALE</div>
+          <h5>Mobile Game</h5>
+          <p>Bead-walk gacha-strategy hybrid. Collect classes. Earn beads. Climb the tournament. Built for the existing fan economy.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="12" y="6" width="24" height="36" rx="3"/><circle cx="24" cy="36" r="2" fill="currentColor"/></svg></div>
+        </div>
+
+        <div class="fran-tile dark">
+          <div class="phase">PHASE 03 · SCALE</div>
+          <h5>Console Title</h5>
+          <p>Action-arena fighter. Devil May Cry meets For Honor. Each clan plays differently. Tournament mode parallels the show.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 22c0-6 4-10 10-10h16c6 0 10 4 10 10v4c0 6-4 10-10 10H16c-6 0-10-4-10-10v-4z"/><circle cx="18" cy="26" r="2" fill="currentColor"/><circle cx="30" cy="26" r="2" fill="currentColor"/></svg></div>
+        </div>
+
+        <div class="fran-tile">
+          <div class="phase">PHASE 04 · UNIVERSE</div>
+          <h5>Live Events</h5>
+          <p>Anime conventions. Clan meet-ups. Tournament cosplay arcs. Treat fans like worshippers — because that is exactly what the world says they are.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 38l8-22 8 16 8-10 8 16"/><circle cx="40" cy="38" r="3"/></svg></div>
+        </div>
+
+        <div class="fran-tile blood">
+          <div class="phase">PHASE 04 · UNIVERSE</div>
+          <h5>Spin-Off Series</h5>
+          <p>Each clan can carry its own arc. Vordaan war drama. Anansi heist show. Sunari horror anthology. The world was built for it.</p>
+          <div class="glyph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="14" cy="14" r="6"/><circle cx="34" cy="14" r="6"/><circle cx="14" cy="34" r="6"/><circle cx="34" cy="34" r="6"/><path d="M20 14h8M14 20v8M34 20v8M20 34h8"/></svg></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chrome-bot">
+      <div class="seal">Phase 01 funds Phase 02. Phase 02 funds Phase 03. By Phase 04 the IP is paying for itself.</div>
+      <div class="pageno">14 / 15</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SLIDE 15 — SOURCES / CLOSE
+       ============================================================ -->
+  <section class="slide" id="slide-15" data-screen-label="15 Sources & Close">
+    <div class="chrome-top">
+      <div class="mark"><span class="dot"></span><span class="section">Credits · 15</span></div>
+      <div>Sources · Visual References</div>
+    </div>
+
+    <div class="src-wrap">
+      <div class="src-left">
+        <div class="kicker" style="color:var(--gold-light);">For visual purposes only</div>
+        <h2 class="h-2" style="margin-top:14px;">Reference<br>credits.</h2>
+        <p>All visual references in this deck are placeholder slots intended for licensed art, original concept work, or properly-credited reference imagery sourced from Pinterest, ArtStation and similar artist platforms.</p>
+        <p>This deck is a pitch document. No reference image is presented as final art or as a claim of authorship.</p>
+
+        <div class="src-disclaimer">
+          Drop reference images onto the slots throughout the deck. Then list each artist below with a clickable link to the original work. Confirm permissions before external distribution.
+        </div>
+      </div>
+
+      <div class="src-list">
+        <h4>Visual References — Credit Table</h4>
+        <!-- Each row: slide reference, artist + work, link -->
+        <div class="src-row"><span class="slide-ref">S.01 · Cover Hero</span><span class="credit">Artist Name — "Work Title"</span><a href="#" target="_blank" rel="noopener">artstation.com / link</a></div>
+        <div class="src-row"><span class="slide-ref">S.01 · Vorath</span><span class="credit">Artist Name — "Work Title"</span><a href="#" target="_blank" rel="noopener">pinterest.com / link</a></div>
+        <div class="src-row"><span class="slide-ref">S.03 · Centuria</span><span class="credit">Artist Name — "Work Title"</span><a href="#" target="_blank" rel="noopener">artstation.com / link</a></div>
+        <div class="src-row"><span class="slide-ref">S.04 · Tone 01–08</span><span class="credit">Various artists — list each individually</span><a href="#" target="_blank" rel="noopener">multiple sources</a></div>
+        <div class="src-row"><span class="slide-ref">S.10 · Kairu</span><span class="credit">Artist Name — "Work Title"</span><a href="#" target="_blank" rel="noopener">artstation.com / link</a></div>
+        <div class="src-row"><span class="slide-ref">S.10 · Vorath</span><span class="credit">Artist Name — "Work Title"</span><a href="#" target="_blank" rel="noopener">pinterest.com / link</a></div>
+        <div class="src-row"><span class="slide-ref">S.10 · Sevryn</span><span class="credit">Artist Name — "Work Title"</span><a href="#" target="_blank" rel="noopener">artstation.com / link</a></div>
+        <div class="src-row"><span class="slide-ref">S.10 · Omi</span><span class="credit">Artist Name — "Work Title"</span><a href="#" target="_blank" rel="noopener">pinterest.com / link</a></div>
+        <div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.16em;color:var(--bone-2);margin-top:14px;line-height:1.7;opacity:0.7;">
+          Replace each row with the actual artist, title, and source URL once reference images are placed. Add additional rows as needed.
+        </div>
+      </div>
+    </div>
+
+    <div class="src-final">
+      <div>
+        <div class="eyebrow" style="color:var(--bone-2);">A Thiink Media Graphics Property · 2026</div>
+        <div style="font-family:var(--font-mono);font-size:13px;letter-spacing:0.18em;color:var(--bone-2);margin-top:8px;">CONTACT · thiinkmediagraphics.com</div>
+      </div>
+      <div class="endmark">GOD SMACK<span class="ex">!</span></div>
+    </div>
+
+    <div class="chrome-bot" style="bottom:24px;">
+      <div class="seal" style="color:var(--bone-2);">END · "Every god was once just a name someone whispered in the dark."</div>
+      <div class="pageno" style="color:var(--bone);">15 / 15</div>
+    </div>
+  </section>
+
+</deck-stage>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="image-slot.js"></script>
+<script src="deck-stage.js"></script>
+
+<script>
+// Draw 100 beads around the halo ring on slide 06
+(function drawHaloBeads(){
+  const group = document.getElementById('halo-beads');
+  if (!group) return;
+  const cx = 300, cy = 300, r = 230;
+  const total = 100;
+  // colors mostly white, a few accent beads
+  const accents = { 12: '#9E1B1B', 27: '#B8924A', 41: '#9E1B1B', 58: '#B8924A', 73: '#9E1B1B', 88: '#B8924A', 97: '#B8924A', 5: '#3D8C8A', 64: '#4A4882', 81: '#6E2F8C' };
+  let svg = '';
+  for (let i = 0; i < total; i++) {
+    const a = (i / total) * Math.PI * 2 - Math.PI / 2;
+    const x = cx + r * Math.cos(a);
+    const y = cy + r * Math.sin(a);
+    const fill = accents[i] || '#F4EEDE';
+    const stroke = (fill === '#F4EEDE') ? '#3A2E22' : 'none';
+    svg += `<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="6.4" fill="${fill}" stroke="${stroke}" stroke-width="${stroke==='none'?0:0.8}"/>`;
+  }
+  group.innerHTML = svg;
+})();
+</script>
+
+</body>
+</html>

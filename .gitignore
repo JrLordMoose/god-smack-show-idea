@@ -1,0 +1,27 @@
+# OS & editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.cursor/
+
+# Google Drive
+.thumbnail
+
+# Hosted on GitHub manually — do not commit or overwrite from local
+assets/
+
+# Local dev / QA screenshots (not needed for the live site)
+debug/
+debug2/
+debug3/
+debug4/
+debug5/
+debug-*.png
+
+# Working uploads (duplicates of assets/img; keep PDF optional)
+uploads/pasted-*.png
+
+# Unused dev asset (large contact sheet; not referenced in HTML)
+assets/img/04-tone-reel-contactsheet.png
